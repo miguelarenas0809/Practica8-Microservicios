@@ -1,0 +1,19 @@
+{
+  "name": "sala-cine-microservicios",
+  "version": "1.0.0",
+  "description": "Simulador de venta de boletos de cine con microservicios (comunicacion HTTP directa)",
+  "main": "iniciar.js",
+  "scripts": {
+    "start": "node iniciar.js",
+    "usuarios": "node usuarios/index.js",
+    "catalogo": "node catalogo/index.js",
+    "asientos": "node asientos/index.js",
+    "compras": "node compras/index.js",
+    "gateway": "node gateway/index.js",
+    "reset": "node -e \"require('fs').rmSync('datos',{recursive:true,force:true})\""
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "express": "^5.3.0"
+  }
+}
